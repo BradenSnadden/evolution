@@ -1,0 +1,12 @@
+for (elements in cities) is N
+    x = random(0,N)
+    while (cities[x] == null)
+        x++ (unless overlap)
+    individual.city[i] = cities[x]
+    cities[x] == NULL
+    i++
+
+
+swap::
+    
+    
