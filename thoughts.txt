@@ -1,0 +1,2 @@
+Array of cities will be stored as a 2xN array, where n is the number of cities
+order is the adjacent unexplored element
