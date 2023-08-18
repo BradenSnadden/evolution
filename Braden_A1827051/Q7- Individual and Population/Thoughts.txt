@@ -1,0 +1,1 @@
+Take the array of cities provided by the TSP class, then randomly select which one to use
