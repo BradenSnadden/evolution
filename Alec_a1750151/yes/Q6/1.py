@@ -1,19 +1,22 @@
 import os
 from pathlib import Path
-#import numpy as np
+import numpy as np
 
-abspath = os.path.abspath(__file__)
-dname = os.path.dirname(abspath)
-os.chdir(dname)
+os.chdir(os.path.dirname(__file__))
 
-os.getcwd()
+f = open('tsp.txt', 'r')
+file_contents = f.read()
+print (file_contents)
 
-#f = open('tsp.txt', 'r')
+cities = np.genfromtxt(fname = f, skip_header=7)
+print(cities)
+
+f.close()
 
 
+#print("hello world")
 
-#cities = numpy.genfromtxt(fname = f, skip_header=7)
-#print(cities)
+
 
 #class TSP:
     #cities = []
