@@ -15,7 +15,8 @@ def insertionMutation(arr):
     print(a1)
     print(a2)
     
-    for i in range(a2-2, a1-1, -1):
+    # reverse loop through the array and swap the values until it reaches 1 position in front of a1
+    for i in range(a2-2, a1-1, -1): 
         temp = arr[i+1]
         arr[i+1] = arr[i]
         arr[i] = temp
