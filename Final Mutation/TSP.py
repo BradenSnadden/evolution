@@ -8,6 +8,5 @@ class TSP:
 
     # create cities array from data in tsp file
     cities = np.genfromtxt("tsp.txt", skip_header=6, skip_footer=1)
-    print(cities)
 
 TSP()
