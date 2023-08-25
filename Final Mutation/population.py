@@ -3,5 +3,5 @@ import TSP
 
 class population(TSP):
     list = 0
-    #popList = np.array()
+    popList = np.array()
     
