@@ -2,5 +2,6 @@ import numpy as np
 import TSP
 
 class population(TSP):
-    popList = np.array()
+    list = 0
+    #popList = np.array()
     
