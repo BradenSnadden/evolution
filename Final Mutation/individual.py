@@ -1,14 +1,15 @@
 import numpy as np
 import random as rand
 import math
-import TSP
+from TSP import TSP as ClassName
 
-class individual(TSP):
+class individual(ClassName):
     
-    city = np.empty([TSP.N,2])
+    city = np.array([ClassName.N,2])
     fitness = 0
 
     def __init__(self):
+        city = np.empty([self.N,2])
         self.seq = np.random.permutation(self.N)
         for i in range(self.N):
             self.city[self.seq[i]] = self.cities[i]
@@ -17,10 +18,10 @@ class individual(TSP):
     def calcFitness(self):
         total = 0
         for i in range(self.N):
-            x = self.city[i][0]
-            y = self.city[i][1]
-            x1 = self.city[i+1][0]
-            y1 = self.city[i+1][1]
+            x = self.city[i][1]
+            y = self.city[i][2]
+            x1 = self.city[i+1][1]
+            y1 = self.city[i+1][2]
 
             total += math.sqrt((x1-x)**2+(y1-y)**2)
         print(total)

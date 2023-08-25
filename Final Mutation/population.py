@@ -1,8 +1,8 @@
 import numpy as np
-import TSP
 
-class population(TSP):
+
+class population():
     list = 0
-    popList = np.array()
+    popList = np.empty([0])
     
     
