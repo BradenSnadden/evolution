@@ -1,7 +1,0 @@
-part 8:
-    Ajeendra: insert, order crossover
-    Henry: swap, pmx
-    Kaijun: inversion, cycle crossover
-    Ryan: scramble, edge recombination
-
-    all use numpy arrays for storing the index of a city array of cities
