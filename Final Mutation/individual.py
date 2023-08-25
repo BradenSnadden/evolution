@@ -8,15 +8,15 @@ class individual(population):
     city = np.array()
     fitness = 0
 
-    def __init__(self, n):
+    def __init__(self):
         self.seq = np.random.permutation(self.N)
-        for i in range(N):
-            self.city[self.seq[i]] = cities[i]
-        self.city[N+1] = self.city[1]
+        for i in range(self.N):
+            self.city[self.seq[i]] = self.cities[i]
+        self.city[self.N+1] = self.city[1]
         
     def calcFitness(self):
         total = 0
-        for i in range(N):
+        for i in range(self.N):
             x = self.city[i][0]
             y = self.city[i][1]
             x1 = self.city[i+1][0]
