@@ -18,6 +18,6 @@ class Population:
         self.pop_list = [Individual(self.size) for _ in range(self.size)]
 
 if __name__ == "__main__":
-    i = Individual(10)
+    i = Individual(420)
     i.generate()
     print(i.seq)
