@@ -4,14 +4,14 @@ import numpy as np
 
 os.chdir(os.path.dirname(__file__))
 
-f = open('tsp.txt', 'r')
-file_contents = f.read()
-print (file_contents)
+#f = open('tsp.txt', 'r')
+#file_contents = f.read()
+#print (file_contents)
 
-cities = np.genfromtxt(fname = f, skip_header=7)
+cities = np.genfromtxt("tsp.txt", skip_header=6, skip_footer=1)
 print(cities)
 
-f.close()
+#f.close()
 
 
 #print("hello world")
