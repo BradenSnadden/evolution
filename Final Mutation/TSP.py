@@ -9,6 +9,10 @@ class TSP:
     # create cities array from data in tsp file
     cities = np.genfromtxt("tsp.txt", dtype=float, skip_header=6, skip_footer=1)
     cities[:,1:]
+
+    #N = number of rows
+    N, num_cols = cities.shape
+
     print(cities)
 
 TSP()
