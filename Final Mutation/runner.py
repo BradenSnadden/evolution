@@ -1,6 +1,7 @@
 import individual as indv
+import population
+pop = population()
+pop.popList[1] = indv()
 
-hello = indv()
-
-hello.calcFitness()
+pop[1].calcFitness()
 

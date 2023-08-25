@@ -1,11 +1,11 @@
 import numpy as np
 import random as rand
-import population
 import math
+import TSP
 
-class individual(population):
+class individual(TSP):
     
-    city = np.array()
+    city = np.empty([TSP.N,2])
     fitness = 0
 
     def __init__(self):
