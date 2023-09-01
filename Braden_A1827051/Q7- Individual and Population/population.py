@@ -3,7 +3,7 @@ from individual import individual as Individual
 
 class population():
 
-    popList = np.empty(0, dtype=Individual)
+    popList = np.empty([], dtype=Individual)
 
     def __init__(self):
         a = Individual()
