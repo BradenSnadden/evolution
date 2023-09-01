@@ -14,14 +14,16 @@ class individual(ClassName):
             self.city[self.seq[i]][0] = self.cities[i][0]
             self.city[self.seq[i]][1] = self.cities[i][1]
         self.city = np.append(self.city, self.city[1])
+        self.city[self.N][1] = self.city[1][1]
         
     def calcFitness(self):
         total = 0
+        print(np.shape(self.city))
         for i in range(self.N):
-            x = self.city[i][0]
-            y = self.city[i][1]
-            x1 = self.city[i+1][0]
-            y1 = self.city[i+1][1]
+            x = self.city[i]
+            y = self.city[i]
+            x1 = self.city[i+1]
+            y1 = self.city[i+1]
 
             total += math.sqrt((x1-x)**2+(y1-y)**2)
         print(total)
