@@ -1,8 +1,7 @@
 from individual import individual
 from population import population
+import numpy as np
 pop = population()
-a = individual()
-pop.popList[1] = a
-
-print(individual.calcFitness(pop[1]))
+print(np.shape(pop.popList))
+#print(pop.popList[1].calcFitness())
 
