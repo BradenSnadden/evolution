@@ -7,6 +7,7 @@ class individual(ClassName):
     
     city = ClassName.cities
     fitness = 0
+    new = np.array([ClassName.N,2])
 
     def __init__(self):
         self.seq = np.random.permutation(self.N)
@@ -14,6 +15,10 @@ class individual(ClassName):
             self.city[self.seq[i]][0] = self.cities[i][0]
             self.city[self.seq[i]][1] = self.cities[i][1]
         self.city = np.append(self.city, self.city[1])
+        
+        self.new = np.random.shuffle(self.city)
+        print(np.shape(self.new))
+        
         
         
     def calcFitness(self):
