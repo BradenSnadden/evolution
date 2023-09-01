@@ -11,7 +11,7 @@ def insertionMutation(arr):
     while (a1 >= a2):  # make sure a1 < a2
         a1 = random.randint(1,lenArr)
         a2 = random.randint(1,lenArr)
-
+    
     print(a1)
     print(a2)
     
@@ -20,7 +20,7 @@ def insertionMutation(arr):
         temp = arr[i+1]
         arr[i+1] = arr[i]
         arr[i] = temp
-
+        
     return(arr)
 
 array = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
