@@ -13,7 +13,7 @@ class individual(ClassName):
         for i in range(1,self.N):
             self.city[self.seq[i]][0] = self.cities[i][0]
             self.city[self.seq[i]][1] = self.cities[i][1]
-        np.append(self.city, self.city[1])
+        self.city = np.append(self.city, self.city[1])
         
     def calcFitness(self):
         total = 0
