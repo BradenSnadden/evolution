@@ -7,12 +7,10 @@ class individual(ClassName):
     
     fitness = 0
     city = ClassName.cities
-    
-    def __init__(self, cities):
-        #print(cities[0][1])
-        np.random.shuffle(self.city)
-        
-        
+    fitness = 0
+    new = np.array([ClassName.N,2])
+
+    def __init__(self):
         
         
         
