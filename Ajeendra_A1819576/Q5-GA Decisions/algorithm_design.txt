@@ -1,0 +1,4 @@
+Believing that insertion mutation and order crossover were interesting choices, those were implemented with different probabilities throughout all 3 algorithms (15% chance of both occurring, 25% mutation - 5% crossover, and 5% crossover - 25% mutation, respectively). 
+These probabilities were chosen since it is small enough that it wouldn't cause a huge impact on the initial population but big enough to create changes among the evolution of generations, hoping to achieve a global minima for the fitness value. 
+Also allows us to check the impact that a mutation or crossover has on final result. 
+This means that the parents are being replaced 30% of the time with a child which is an elitist strategy for approaching a minima.
