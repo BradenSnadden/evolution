@@ -1,6 +1,16 @@
 import numpy as np
-import 6
+from individual import individual as Individual
+from TSP import TSP as TSP
 
-class population(TSP):
-    popList = np.array()
+class population():
+
+    popList = np.empty((0), dtype=Individual)
+
+    def __init__(self):
+
+        for i in range(10):
+            a = Individual(TSP.cities)
+            self.popList = np.append(self.popList, a)
+
+    
     
