@@ -1,13 +1,13 @@
 Three classes: TSP, Individual and Population. 
 
 The population class is populated by several Individuals each of which has the ability to undergo Mutation and Crossovers. 
-As such, the Individual Class has the functions that implement the Mutation Operators and the Crossover Operators. 
+As such, the Individual Class has the functions that implement the Mutation Operators and the Crossover Operators which will be imported. 
 Each Individual also has an associated fitness which can be calculated and it is possible to also access the ordering of cities 
 (solutionCities) after mutations and crossovers. It inherits from TSP since it requires the functions in TSP.
 
 Population has the option of adding and deleting Individuals since it would basically be an array made up of Individuals. The 
 size of it can also be accessed. It will start off by initializing a bunch of individuals. 
 
-The TSP class determines the overall solution by accessing the overall Fitness through the process of evolution Evolve()  
+The TSP class determines the overall solution by accessing the overall Fitness through the process of evolution.  
 
 All classes have a constructor which can be used to initialize.  
