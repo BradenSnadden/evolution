@@ -4,15 +4,19 @@ from TSP import TSP as TSP
 
 class population():
 
-    popList = np.empty(0, dtype=Individual)
+    popList = np.empty((0), dtype=Individual)
 
     def __init__(self):
-        a = Individual(TSP.cities)
+
+        for i in range(10):
+            a = Individual(TSP.cities)
+            self.popList = np.append(self.popList, a)
+        # a = Individual(TSP.cities)
         
-        b = Individual(TSP.cities)
-        c = Individual(TSP.cities)
-        self.popList=np.append(self.popList, a)
-        self.popList=np.append(self.popList, b)
-        self.popList=np.append(self.popList, c)
+        # b = Individual(TSP.cities)
+        # c = Individual(TSP.cities)
+        # self.popList=np.append(self.popList, a)
+        # self.popList=np.append(self.popList, b)
+        # self.popList=np.append(self.popList, c)
     
     

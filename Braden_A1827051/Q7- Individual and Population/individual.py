@@ -10,6 +10,7 @@ class individual(ClassName):
     
     def __init__(self, cities):
         #print(cities[0][1])
+        self.city = np.copy(cities)
         np.random.shuffle(self.city)
         
         
