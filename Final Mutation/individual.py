@@ -23,7 +23,7 @@ class individual(ClassName):
         
     def calcFitness(self):
         total = 0
-        print(np.shape(self.city))
+        #print(np.shape(self.city))
         for i in range(self.N):
             x = self.city[i,0]
             y = self.city[i,1]

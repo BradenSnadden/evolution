@@ -13,8 +13,8 @@ def orderCrossover(arr1, arr2):
         a1 = random.randint(0,lenArr-1)
         a2 = random.randint(0,lenArr-1)
 
-    print(a1+1) 
-    print(a2)
+    #print(a1+1) 
+    #print(a2)
 
     arr3 = np.zeros((lenArr,2)) # initialise child array
     
@@ -31,11 +31,11 @@ def orderCrossover(arr1, arr2):
     return arr3    
 
 
-arr1 = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-arr2 = np.array([9, 3, 7, 8, 2, 6, 5, 1, 4])
+#arr1 = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+#arr2 = np.array([9, 3, 7, 8, 2, 6, 5, 1, 4])
 
-orderCrossoverArr = orderCrossover(arr1, arr2)
-print(orderCrossoverArr)
+#orderCrossoverArr = orderCrossover(arr1, arr2)
+#print(orderCrossoverArr)
 
 
 
