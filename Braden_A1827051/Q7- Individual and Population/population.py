@@ -11,12 +11,6 @@ class population():
         for i in range(10):
             a = Individual(TSP.cities)
             self.popList = np.append(self.popList, a)
-        # a = Individual(TSP.cities)
-        
-        # b = Individual(TSP.cities)
-        # c = Individual(TSP.cities)
-        # self.popList=np.append(self.popList, a)
-        # self.popList=np.append(self.popList, b)
-        # self.popList=np.append(self.popList, c)
+
     
     
