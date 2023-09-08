@@ -8,15 +8,18 @@ class individual(ClassName):
     fitness = 0
     city = ClassName.cities
     
+    
     def __init__(self, cities):
         #print(cities[0][1])
         self.city = np.copy(cities)
+        
         np.random.shuffle(self.city)
         
         
         
         
-        
+    def getSize(self):
+        return self.N        
         
     def calcFitness(self):
         total = 0

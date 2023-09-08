@@ -16,7 +16,7 @@ def orderCrossover(arr1, arr2):
     print(a1+1) 
     print(a2)
 
-    arr3 = np.zeros((lenArr)) # initialise child array
+    arr3 = np.zeros((lenArr,2)) # initialise child array
     
     arr3[a1:a2] = arr1[a1:a2]  # copy all elements initially from parent 1 to child array
 
