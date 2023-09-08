@@ -1,7 +1,7 @@
 from individual import individual
 from population import population
 from insert_mutation import insert_mutation
-from partially_mapped_crossover import partially_mapped_crossover
+
 from orderCrossover import orderCrossover
 import numpy as np
 pop = population()
