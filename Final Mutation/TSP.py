@@ -9,7 +9,7 @@ class TSP:
     # create cities array from data in tsp file
     cities = np.genfromtxt("tsp.txt", dtype=float, skip_header=6, skip_footer=1)
     # remove node number (i.e first column of data)
-    cities = np.delete(cities, 0, axis=1)
+    #cities = np.delete(cities, 0, axis=1)
     
 
     #N = number of rows, num_cols = number of columns
