@@ -2,7 +2,7 @@ import numpy as np
 import random as random
 
 def orderCrossover(arr1, arr2):
-    
+    print ("here " ,np.shape(arr1))
     lenArr = len(arr1)  # get length of the input array
 
     # pick any 2 random alleles (not the same)
@@ -13,8 +13,8 @@ def orderCrossover(arr1, arr2):
         a1 = random.randint(0,lenArr-1)
         a2 = random.randint(0,lenArr-1)
 
-    #print(a1+1) 
-    #print(a2)
+    print(a1+1) 
+    print(a2)
 
     arr3 = np.zeros((lenArr,2)) # initialise child array
     

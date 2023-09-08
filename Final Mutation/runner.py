@@ -24,8 +24,8 @@ for i in range(20000):
     for j in range(9):
         for k in range(20):
             if(random.randint(1,100) < 15):
-                all[k].popList[j].city = insert_mutation(all[k].popList[j].city)
-                all[k].popList[j].city = orderCrossover(all[k].popList[j].city, all[k].popList[j+1].city )
+                all[k].popList[j].city = np.copy(insert_mutation(all[k].popList[j].city))
+                all[k].popList[j].city = np.copy(orderCrossover(all[k].popList[j].city, all[k].popList[j+1].city ))
     if i % 10 == 0:
         bestFitness = 10000000
         for m in range(9):
