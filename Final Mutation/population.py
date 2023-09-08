@@ -12,5 +12,10 @@ class population():
             a = Individual(TSP.cities)
             self.popList = np.append(self.popList, a)
 
+p = population()
+print(p.popList)
+for i in range(len(p.popList)):
+    print(p.popList[i].city)
+
     
     
