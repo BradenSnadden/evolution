@@ -35,7 +35,7 @@ class individual(ClassName):
                 y1 = self.city[i+1,1]
 
             total += math.sqrt((x1-x)**2+(y1-y)**2)
-        print(total)
+        return total
 
         
 
