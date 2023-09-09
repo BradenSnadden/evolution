@@ -7,20 +7,20 @@ Ajeendra:
 
 Alec:
     Alec was given the task of completing part 6, which involved reading from a file and saving the cities provided in a numpy array.
-    The writing of part 10 was partially Alecs responsibility, split with Henry.
+    The writing of part 10 was partially Alecs responsibility.
 
 Braden:
     Braden implemented the population and individual classes, collaborating with Alec to ensure that formatting and data types remained the same.
     The writing of parts 3 and 4 were also contributed to by Braden.
 
 Henry:
-    Henry was tasked with implementing the swap mutation, along with the Partially Mapped Crossover functions.
-    The writing for part 10 was Henrys responsibility, split with Alec.
+    Henry was tasked with implementing the swap mutation, along with the Partially Mapped Crossover functions. He also completed the implementation of
+    inver-over for part 11 and wrote it's results. He also programed the plots and created all 4 of the co-ordinate diagrams for part 10.
 
 Ryan:
     Ryan split tasks 8 and 9 with the other group members, specifically the scramble mutation and edge recombination functions.
-    Ryan also helped with alot of the writing in parts 11 and 10.
+    Ryan also helped with alot of the writing in parts 10.
 
 Kaijun:
     Kaijun, similar to Ryan, split tasks 8 and 9 with the other group members, taking command of the inversion and cycle crossover implementations.
-    Kaijunm also co wrote significant parts of the text in parts 10 and 11.
+    Kaijunm also co wrote significant parts of the text in parts 10.
