@@ -34,29 +34,21 @@ optimal_tour_file = "OptTour.txt"  # Replace with the path to your optimal tour 
 optimal_tour = read_optimal_tour(optimal_tour_file)
 
 # Plot the city locations (Not Needed)
-# x_coords = [city_coordinates[city_id][0] for city_id in range(1, len(city_coordinates))]
-# y_coords = [city_coordinates[city_id][1] for city_id in range(1, len(city_coordinates))]
-# plt.scatter(x_coords, y_coords, color='blue', label='Cities')
+x_coords = [city_coordinates[city_id][0] for city_id in range(1, len(city_coordinates))]
+y_coords = [city_coordinates[city_id][1] for city_id in range(1, len(city_coordinates))]
+plt.scatter(x_coords, y_coords, s=15, color='seagreen', label='Cities')
 
 # Plot the optimal tour for pcb442.tsp
 optimal_tour_x = [city_coordinates[city_id][0] for city_id in optimal_tour]
 optimal_tour_y = [city_coordinates[city_id][1] for city_id in optimal_tour]
 optimal_tour_x.append(optimal_tour_x[0])  # Connect the last city to the starting city
 optimal_tour_y.append(optimal_tour_y[0])
-plt.plot(optimal_tour_x, optimal_tour_y, marker='o', markersize=6, color='green', label='Optimal Tour')
-
-# Plot the best tour found by the Inver-Over algorithm
-best_tour_x = [city_coordinates[city_id][0] for city_id in range(1, len(best_tour))]
-best_tour_y = [city_coordinates[city_id][1] for city_id in range(1, len(best_tour))]
-best_tour_x.append(best_tour_x[0])  # Connect the last city to the starting city
-best_tour_y.append(best_tour_y[0])
-plt.plot(best_tour_x, best_tour_y, marker='o', markersize=2, color='orange',linewidth=0.5, label='Inver-Over Best Tour')
-
+plt.plot(optimal_tour_x, optimal_tour_y, marker='x', markersize=2, color='cornflowerblue',linewidth=1, label='Optimal Tour')
 
 # Set plot labels and legend
 plt.xlabel('X Coordinate')
 plt.ylabel('Y Coordinate')
-plt.title('TSP Comparison: Inver-Over Best Tour vs. Optimal Tour')
+plt.title('Optimal Tour')
 plt.legend()
 
 # Show the plot

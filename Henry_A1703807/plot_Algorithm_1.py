@@ -27,7 +27,7 @@ for line in lines:
 
 # Read the best tour found by the Inver-Over algorithm
 # Replace this with the best tour you obtained from your algorithm
-best_tour = [141, 389, 387, 130, 119, 108, 384, 120, 390, 142, 155, 143, 156, 167, 180, 195, 194, 193, 204, 205, 206, 216, 192, 191, 203, 215, 224, 232, 255, 256, 257, 418, 259, 258, 421, 304, 303, 302, 327, 328, 344, 329, 305, 330, 331, 332, 431, 333, 426, 436, 274, 422, 419, 271, 437, 301, 300, 299, 324, 325, 326, 430, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 337, 336, 335, 334, 306, 267, 415, 263, 262, 235, 261, 260, 411, 407, 408, 403, 412, 217, 207, 196, 181, 182, 197, 208, 218, 413, 236, 264, 409, 410, 225, 219, 209, 198, 183, 170, 159, 147, 169, 158, 146, 168, 157, 145, 132, 122, 110, 90, 91, 26, 25, 58, 59, 27, 28, 29, 30, 375, 376, 32, 31, 64, 95, 63, 62, 61, 60, 93, 92, 100, 435, 94, 378, 379, 96, 97, 383, 382, 112, 124, 134, 111, 123, 133, 144, 131, 121, 109, 89, 57, 88, 55, 54, 86, 85, 84, 83, 380, 381, 377, 87, 56, 24, 23, 22, 21, 20, 19, 53, 52, 51, 18, 17, 50, 49, 48, 16, 15, 14, 13, 12, 11, 10, 43, 9, 8, 41, 40, 7, 6, 5, 38, 70, 39, 71, 72, 73, 42, 74, 75, 76, 44, 45, 46, 47, 78, 77, 98, 104, 105, 106, 99, 79, 80, 81, 82, 438, 107, 118, 129, 117, 128, 140, 139, 138, 127, 116, 115, 388, 150, 161, 149, 136, 386, 114, 440, 103, 67, 66, 34, 2, 3, 4, 37, 69, 68, 36, 35, 1, 0, 441, 33, 65, 101, 102, 113, 385, 126, 125, 135, 148, 160, 171, 184, 399, 404, 226, 233, 237, 265, 268, 269, 238, 405, 400, 185, 172, 173, 395, 398, 186, 210, 220, 228, 211, 402, 174, 151, 391, 137, 392, 152, 162, 175, 187, 163, 153, 164, 176, 188, 201, 401, 213, 200, 396, 199, 212, 221, 229, 245, 244, 243, 423, 287, 313, 312, 286, 311, 285, 284, 310, 309, 283, 282, 279, 425, 242, 241, 240, 406, 227, 234, 239, 266, 270, 273, 276, 272, 275, 278, 280, 340, 341, 427, 281, 439, 307, 308, 338, 345, 346, 347, 432, 348, 349, 339, 350, 351, 342, 352, 353, 354, 433, 355, 356, 357, 434, 358, 429, 359, 360, 343, 428, 298, 297, 323, 322, 296, 277, 295, 321, 320, 294, 293, 319, 318, 292, 291, 317, 316, 290, 289, 315, 314, 288, 424, 420, 246, 247, 248, 414, 249, 250, 230, 222, 251, 416, 417, 252, 253, 254, 231, 223, 214, 202, 189, 190, 397, 178, 177, 165, 394, 179, 166, 393, 154]  # Example tour for illustration
+best_tour = [283 ,228 ,403 ,178 ,289 ,339 ,70 ,360 ,200 ,222 ,405 ,424 ,370 ,270 ,358 ,100 ,206 ,227 ,423 ,174 ,36 ,113 ,28 ,204 ,299 ,131 ,433 ,382 ,372 ,78 ,421 ,420 ,65 ,295 ,300 ,340 ,301 ,67 ,132 ,320 ,29 ,323 ,103 ,16 ,177 ,57 ,55 ,107 ,50 ,85 ,33 ,354 ,89 ,383 ,224 ,243 ,385 ,43 ,73 ,60 ,95 ,240 ,80 ,109 ,197 ,225 ,61 ,316 ,333 ,437 ,40 ,302 ,428 ,399 ,386 ,201 ,94 ,192 ,64 ,39 ,130 ,337 ,117 ,294 ,37 ,63 ,164 ,409 ,397 ,162 ,167 ,155 ,21 ,139 ,338 ,25 ,236 ,171 ,121 ,101 ,216 ,390 ,82 ,373 ,308 ,105 ,235 ,282 ,429 ,147 ,180 ,436 ,321 ,149 ,136 ,268 ,275 ,129 ,5 ,330 ,159 ,68 ,247 ,198 ,356 ,238 ,35 ,127 ,53 ,264 ,284 ,213 ,9 ,26 ,96 ,254 ,369 ,34 ,303 ,11 ,52 ,310 ,145 ,347 ,47 ,115 ,440 ,187 ,163 ,97 ,165 ,191 ,309 ,248 ,314 ,217 ,426 ,190 ,281 ,202 ,255 ,379 ,352 ,371 ,407 ,62 ,210 ,135 ,151 ,169 ,161 ,124 ,304 ,311 ,355 ,199 ,363 ,185 ,266 ,418 ,214 ,230 ,75 ,357 ,315 ,209 ,76 ,7 ,86 ,229 ,259 ,376 ,332 ,140 ,434 ,6 ,146 ,313 ,410 ,120 ,116 ,252 ,91 ,143 ,381 ,170 ,274 ,419 ,142 ,317 ,342 ,344 ,378 ,336 ,431 ,111 ,1 ,184 ,319 ,368 ,249 ,119 ,183 ,404 ,22 ,359 ,223 ,288 ,269 ,19 ,327 ,306 ,2 ,325 ,211 ,366 ,3 ,231 ,257 ,125 ,110 ,88 ,273 ,188 ,387 ,392 ,138 ,233 ,181 ,114 ,20 ,329 ,435 ,312 ,251 ,108 ,218 ,362 ,389 ,205 ,15 ,175 ,215 ,267 ,27 ,265 ,322 ,219 ,160 ,148 ,221 ,343 ,287 ,326 ,66 ,417 ,377 ,393 ,144 ,90 ,176 ,106 ,411 ,226 ,123 ,402 ,13 ,58 ,152 ,253 ,92 ,194 ,168 ,241 ,56 ,81 ,51 ,87 ,400 ,203 ,239 ,285 ,324 ,153 ,83 ,246 ,133 ,59 ,401 ,193 ,72 ,42 ,32 ,438 ,220 ,258 ,263 ,48 ,207 ,196 ,49 ,365 ,18 ,361 ,335 ,126 ,118 ,374 ,158 ,271 ,256 ,297 ,8 ,425 ,427 ,278 ,128 ,104 ,12 ,71 ,351 ,157 ,38 ,244 ,24 ,46 ,234 ,237 ,172 ,413 ,350 ,293 ,291 ,17 ,10 ,345 ,262 ,166 ,331 ,305 ,334 ,41 ,154 ,272 ,277 ,292 ,341 ,364 ,14 ,245 ,173 ,408 ,346 ,391 ,260 ,416 ,141 ,179 ,394 ,189 ,261 ,422 ,375 ,328 ,439 ,134 ,186 ,232 ,398 ,77 ,298 ,349 ,414 ,182 ,102 ,137 ,367 ,84 ,242 ,99 ,156 ,432 ,212 ,79 ,44 ,54 ,31 ,122 ,412 ,406 ,45 ,348 ,318 ,69 ,395 ,279 ,112 ,208 ,384 ,442 ,441 ,280 ,250 ,307 ,296 ,388 ,430 ,150 ,30 ,74 ,396 ,276 ,4 ,195 ,93 ,98 ,23 ,353 ,286 ,415 ,290 ,380]  # Example tour for illustration
 
 # Read the optimal tour for pcb442.tsp
 optimal_tour_file = "OptTour.txt"  # Replace with the path to your optimal tour file
@@ -36,27 +36,26 @@ optimal_tour = read_optimal_tour(optimal_tour_file)
 # Plot the city locations (Not Needed)
 # x_coords = [city_coordinates[city_id][0] for city_id in range(1, len(city_coordinates))]
 # y_coords = [city_coordinates[city_id][1] for city_id in range(1, len(city_coordinates))]
-# plt.scatter(x_coords, y_coords, color='blue', label='Cities')
+# plt.scatter(x_coords, y_coords, s=15, color='seagreen', label='Cities')
 
 # Plot the optimal tour for pcb442.tsp
 optimal_tour_x = [city_coordinates[city_id][0] for city_id in optimal_tour]
 optimal_tour_y = [city_coordinates[city_id][1] for city_id in optimal_tour]
 optimal_tour_x.append(optimal_tour_x[0])  # Connect the last city to the starting city
 optimal_tour_y.append(optimal_tour_y[0])
-plt.plot(optimal_tour_x, optimal_tour_y, marker='o', markersize=6, color='green', label='Optimal Tour')
+plt.plot(optimal_tour_x, optimal_tour_y, marker='o', markersize=1.5, color='cornflowerblue', label='Optimal Tour')
 
-# Plot the best tour found by the Inver-Over algorithm
-best_tour_x = [city_coordinates[city_id][0] for city_id in range(1, len(best_tour))]
-best_tour_y = [city_coordinates[city_id][1] for city_id in range(1, len(best_tour))]
+# Plot the best tour found by Algorithm #1
+best_tour_x = [city_coordinates[city_id][0] for city_id in best_tour]
+best_tour_y = [city_coordinates[city_id][1] for city_id in best_tour]
 best_tour_x.append(best_tour_x[0])  # Connect the last city to the starting city
 best_tour_y.append(best_tour_y[0])
-plt.plot(best_tour_x, best_tour_y, marker='o', markersize=2, color='orange',linewidth=0.5, label='Inver-Over Best Tour')
-
+plt.plot(best_tour_x, best_tour_y, marker='o', markersize=1, color='darkmagenta',linewidth=0.5, label='Algorithm #1')
 
 # Set plot labels and legend
 plt.xlabel('X Coordinate')
 plt.ylabel('Y Coordinate')
-plt.title('TSP Comparison: Inver-Over Best Tour vs. Optimal Tour')
+plt.title('TSP Comparison: Algorithm #1 vs. Optimal Tour')
 plt.legend()
 
 # Show the plot
