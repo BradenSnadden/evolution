@@ -1,0 +1,8 @@
+Looking at the Diagrams that have been produced we can see that the inver-over implementation performs favourably compared to the Optimum Solution.
+The best case shown by the Optimal Solution is 50’778, and as the team completing part 10 did not produce a final result,
+their best fitness of Algorithm #1’s 752’748 does not come close to the optimal.
+The inver-over implementation achieving a best fitness of 61’007 is a positive result and comes fairly close to the optimal, especially when compared to Algorithm #1.
+
+When viewing the diagrams, it is clear that the inver-over algorithm takes a much more systematic and complete path that results in a very quick but still slightly sub-optimal route.
+The optimal takes very short horizontal routes between nodes in rather different directions compared to the longer vertical routes inver-over takes,
+which could be improved with increased populations and processing power.
